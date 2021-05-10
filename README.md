@@ -161,7 +161,7 @@ board.on("ready", () => {
 });
 ```
 
-Test the application using `npm start`. You won't see anything happen. If you open the devtools, there's probably an error message there:
+Test the application using `npm run dev`. You won't see anything happen. If you open the devtools, there's probably an error message there:
 
 > Uncaught Error: The module 'projects/p01-blink/node_modules/@serialport/bindings/build/Release/bindings.node' was compiled against a different Node.js version using NODE_MODULE_VERSION 88. This version of Node.js requires NODE_MODULE_VERSION 76. Please try re-compiling or re-installing the module (for instance, using `npm rebuild` or `npm install`).
 
