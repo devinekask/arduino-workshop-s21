@@ -55,7 +55,7 @@ If everything works as it should, you should see the onboard LED blink on the bo
 Take a look at the code from this example. The language you write Arduino code in is the C programming language. We can identify a couple of parts in this Sketch:
 
 - `void setup()`: The code in this function only runs once at startup of the program
-- `void draw()`: The code in this function runs continuously. As soon as this function exits, it runs again. You can interpret this as some sort of endless loop.
+- `void loop()`: The code in this function runs continuously. As soon as this function exits, it runs again. You can interpret this as some sort of endless loop.
 - `pinMode`: By using this function you can configure a certain pin on the arduino as either OUTPUT or INPUT. An output pin is used to drive an external component, whereas an INPUT pin is used to read a value from a pin (eg to read a sensor value).
 - `digitalWrite`: We use this function to write a binary value (HIGH or LOW) to a given pin number.
 - `delay`: This function pauses the execution of the program for a given amount of time in milliseconds.
