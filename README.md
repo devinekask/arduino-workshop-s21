@@ -107,6 +107,32 @@ Until now, we've been writing C code to program our Arduino. Wouldn't it be fun 
 
 Using [Electron](https://electronjs.org) and [Johnny-Five](http://johnny-five.io) we can do just that! We'll upload a generic sketch (Firmata) to the Arduino and give it instructions over USB from within our Javascript code.
 
+### Node Version
+
+Make sure to use a recent version of node. At time of writing, node versions below node 15 weren't working properly with the current versions of electron and johnny-five.
+
+Check your current node version using the command below:
+
+```bash
+node -v
+```
+
+It'll echo the node versions number. For example:
+
+> v14.16.1
+
+Let's update to version 16.1.0, using [nvm](https://github.com/nvm-sh/nvm):
+
+```bash
+nvm install v16.1.0
+```
+
+You can set this as your default version as well (so this is the version used when opening a new terminal):
+
+```bash
+nvm alias default v16.1.0
+```
+
 ### Electron
 
 First of all, we'll run our javascript inside an Electron App. Basically, Electron is a mashup of nodejs and the Chromium rendering engine. You'll run you webpages (including javascript) locally, as a desktop application. This enables you to do everything you could do in a nodejs application but from within your frontend javascript code: access the filesystem, interact with hardware, talk to C++ extensions, ...
@@ -116,15 +142,15 @@ You're probably already using a couple of Desktop apps built using Electron: Vis
 An easy way to get started is by using the [electron-webpack-quick-start project](https://webpack.electron.build/) as a starter project. 
 
 ```bash
-$ git clone https://github.com/electron-userland/electron-webpack-quick-start p01-blink
-$ cd p01-blink
-$ npm install
+git clone https://github.com/electron-userland/electron-webpack-quick-start p01-blink
+cd p01-blink
+npm install
 ```
 
 Test launching the project, by running the dev script:
 
 ```bash
-$ npm run dev
+npm run dev
 ```
 
 An electron window should open.
@@ -176,7 +202,7 @@ Add an extra script to the scripts section of your package.json:
 Run the rebuild-deps script:
 
 ```bash
-$ npm run rebuild-deps
+npm run rebuild-deps
 ```
 
 Launch the app again. The error should be gone now.
