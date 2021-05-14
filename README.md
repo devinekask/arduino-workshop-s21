@@ -80,19 +80,19 @@ Where I stands for current, V for voltage and R for resistance.
 
 ### An LED in a circuit
 
-When we want to connect an LED to an Arduino, the schematic would look something like this:
-
-![schematic view of led connected to an Arduino](images/led-basic-wires-schematic.png)
-
-The same schematic looks like this in an illustrated preview:
+When we want to connect an LED to an Arduino, we'd hook up the short side to a ground pin (GND) and the long side through a resistor to an output pin:
 
 ![preview of led connected to an Arduino](images/led-basic-wires-preview.png)
+
+Most of the Arduino examples you'll find are shown with an Arduino UNO board. As we're using an Arduino Pro Micro board, you'll need to look for the same pin numbers or pins with the same functionality on your Arduino Pro Micro board:
+
+![pinout of an Arduino Pro Micro](images/arduino-pro-micro-pins.jpeg)
 
 We could get our hands dirty with a soldering iron, and melt wires and components together, but this would be a pretty slow prototyping / testing proces. Instead of that, we'll use a breadboard.
 
 Breadboards make it easier to prototype electronic circuits. Make sure to [read the chapter "Anatomy of a breadboard" on the Sparkfun website](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/#anatomy-of-a-breadboard) before continuing.
 
-Build the circuit below using a breadboard and test the Blink example again. The LED should turn on and off.
+Build the circuit below using a breadboard and test the Blink example again (make sure the pin number in your code and the physical pin number match). The LED should turn on and off.
 
 ![preview of the led with breadboard wiring](images/led-basic-breadboard-preview.png)
 
