@@ -258,6 +258,7 @@ Because you are in javascript land, you can combine the hardware with browser lo
 ## Other things to check
 
 - [View Arduino, The documentary](https://vimeo.com/18539129) (28 min)
+- [DIY Pressure Sensor](https://www.youtube.com/watch?v=_RUZtsQzSLY)
 - [Star Wars Imperial March with Floppy and Arduino](https://www.youtube.com/watch?v=B_Q6jMUdfYc)
 - [The breakfast machine](https://www.youtube.com/watch?v=E2evC2xTNWg)
 - [Lunar Trails](https://vimeo.com/54043239)
