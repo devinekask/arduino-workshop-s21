@@ -4,11 +4,17 @@ const board = new five.Board({
 });
 board.on("ready", () => init());
 
-let led;
+let led, potentiometer;
 const $button = document.querySelector('#button');
 
 const init = () => {
   led = new five.Led(9);
+  potentiometer = new five.Sensor("A3");
+
+  potentiometer.on("change", () => {
+    console.log(potentiometer.value);
+    $button.style.transform = `scale(${potentiometer.value / 100})`;
+  });
 
   $button.addEventListener('click', () => {
     led.toggle();
